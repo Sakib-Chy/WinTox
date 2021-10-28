@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinTox</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="body">
+        <header>
+            <div class="main">
+                <div class="logo">
+                    <img src="logo.jpg">
+                </div>
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="admin.html">Admins</a></li>
+                    <li><a href="elite.html">Elites</a></li>
+                    <li><a href="about.html">About</a></ali>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="active2"><a href="login.html">Login/Register</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="facebook.png">
+                <img src="twitter.png">
+                <img src="google.jpg">
+            </div>
+            <form id="login" class="input-group" role="search">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="check-box" required><span>Remember Password</span>
+                <button type="submit" class="submit-btn" href="index.html">Log In</button>
+            </form>
+            <form id="register" class="input-group" role="search">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="Email" class="input-field" placeholder="Email Id" required>
+                <input type="text" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="check-box" required><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn" href="index.html">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    </script>
+
+</html>
